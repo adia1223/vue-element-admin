@@ -1,20 +1,22 @@
 #app {
 
   .main-container {
-    min-height: 100%;
+    min-height: $contentHeight;
+    // min-height: 100%;
     transition: margin-left .28s;
     margin-left: $sideBarWidth;
     position: relative;
+    margin-top: 56px;
   }
 
   .sidebar-container {
     transition: width 0.28s;
     width: $sideBarWidth !important;
     background-color: $menuBg;
-    height: 100%;
+    height: $contentHeight;
     position: fixed;
     font-size: 0px;
-    top: 0;
+    // top: 0;
     bottom: 0;
     left: 0;
     z-index: 1001;
@@ -191,6 +193,7 @@
     .svg-icon {
       margin-right: 16px;
     }
+
     .sub-el-icon {
       margin-right: 12px;
       margin-left: -2px;
